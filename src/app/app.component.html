@@ -1,0 +1,16 @@
+<div class="header">
+  <h2>COLLECTIONS</h2>
+</div>
+<div class="collections">
+  <div class="card" *ngFor="let product of listItems">
+    <div class="card-image">
+      <img [src]="product?.Poster" />
+    </div>
+    <div class="card-title">
+      <small>{{ product?.Title }}</small>
+    </div>
+    <div class="card-action">
+      <button>Details</button>
+    </div>
+  </div>
+</div>
